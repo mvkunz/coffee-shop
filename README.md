@@ -1,4 +1,4 @@
-# coffee-shop
+# Coffee Shop
 Exercício do Curso.
 Vamos simular uma loja de cafés ao criar uma aplicação composta por três páginas principais:
 
