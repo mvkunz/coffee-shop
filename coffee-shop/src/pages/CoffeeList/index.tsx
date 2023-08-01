@@ -1,6 +1,10 @@
+import { Link } from "react-router-dom";
+
 function CoffeeList() {
   return (
-    <h1>CoffeeList page</h1>
+    <Link to="/coffees">
+      Nossos cafés
+    </Link>
   )
 }
 
