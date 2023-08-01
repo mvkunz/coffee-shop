@@ -1,6 +1,8 @@
 import { useParams, Link } from 'react-router-dom';
 import { coffeeList } from '../../data';
 
+import './coffee.css';
+
 function Coffee() {
   const params= useParams();
   const currentCoffee = coffeeList.find((coffee) => coffee.slug === params.coffee)
@@ -15,10 +17,10 @@ function Coffee() {
   }
 
   return (
-    <div>
+    <div className="coffee-page">
       <h1>{ currentCoffee.title }</h1>
       <p>{ currentCoffee.description }</p>
-      <div>
+      <div className="ingredients-list">
         <h2>Ingredientes</h2>
         <ul>
           {
