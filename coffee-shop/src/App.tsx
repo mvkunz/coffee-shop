@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import CoffeeList from './pages/CoffeeList';
 import Coffee from './pages/Coffee';
 import './App.css';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={ <Home /> } />
         <Route path="/coffees" element={ <CoffeeList /> } />
-      <Route path="/coffees/:coffee" element={ <Coffee /> } />
+        <Route path="/coffees/:coffee" element={ <Coffee /> } />
+      <Route path="/*" element={ <NotFound /> } />
       </Routes>
     </>
 
